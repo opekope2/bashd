@@ -11,8 +11,8 @@ Because why not. I wanted to `swaylock` from `/usr/lib/systemd/system-sleep/` an
 1. Clone with `git clone https://github.com/opekope2/bashd.git`
 2. `cd bashd`
 3. Compile/install
-    a. If you use Arch BTW, install with `makepkg -si`
-    b. If you don't use Arch BTW, compile with `gcc -o bashd bashd.c`
+    1. If you use Arch BTW, install with `makepkg -si`
+    2. If you don't use Arch BTW, compile with `gcc -o bashd bashd.c`
 4. Start with `bashd command some_id_for_pkill` (arguments after `command` are ignored by bash'd, they can be used to identify the process with pkill)
 5. Execute `command` with `pkill -SIGUSR1 -f some_id_for_pkill`
 
